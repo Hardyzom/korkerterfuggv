@@ -1,21 +1,21 @@
 #include <stdio.h>
 
-int kerulet(int r){
+float kerulet(float r){
     return 2*r*3.14;
 }
 
-int terulet(int r){
+float terulet(float r){
     return r*r*3.14;
 }
 
 int main(){
 
-int sugar;
+float sugar;
 printf("Adja meg a kör sugarát cm-ben!\n");
-scanf("%d",&sugar);
+scanf("%fl",&sugar);
 printf("\n");
-printf("A kör kerülete: %d cm\n",kerulet(sugar));
-printf("A kör területe: %d cm2\n",terulet(sugar));
+printf("A kör kerülete: %fl cm\n",kerulet(sugar));
+printf("A kör területe: %fl cm2\n",terulet(sugar));
 
 return 0;
 
